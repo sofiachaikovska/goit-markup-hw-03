@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-      <nav>
+        <div class="header-inner">
+      <nav class="header-nav">
         <a class="logo" href="./index.html"
           >Web<span class="accent">Studio</span></a
         >
-        <ul>
+        <ul class="header-menu">
           <li>
             <a class="nav-link" href="./index.html">Studio</a>
           </li>
@@ -31,7 +32,7 @@
         </ul>
       </nav>
       <address class="header-address">
-        <ul>
+        <ul class="header-addresses">
           <li>
             <a class="address" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -42,6 +43,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </div>
     </header>
     <main>
@@ -56,29 +58,29 @@
       <section class="advantages-section section" >
         <div class="container">
         <h2 class="visually-hidden">Why choose us</h2>
-        <ul>
-          <li>
+        <ul class="advantages-list">
+          <li class="advantages-item">
             <h3 class="advantages-section-title">Strategy</h3>
             <p class="advantages-section-paragraph">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-section-title">Punctuality</h3>
             <p class="advantages-section-paragraph">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-section-title">Diligence</h3>
             <p class="advantages-section-paragraph">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <h3 class="advantages-section-title">Technologies</h3>
             <p class="advantages-section-paragraph">
               Design practice focused on digital experiences. We bring forth a
@@ -92,42 +94,58 @@
       <section class="ourteam-section section">
         <div class="container">
         <h2 class="ourteam-title">Our team</h2>
-        <ul>
+        <ul class="teammembers-list">
           <li class="teammembers">
+            <div class="teammember-card">
             <img
               src="./images/teammembers/teamcard1.jpg"
               alt="Team Member 1"
               width="264"
             />
+            <div class="aboutteammember">
             <h3 class="ourteam-names">Mark Guerrero</h3>
             <p class="ourteam-section-paragraph">Product Designer</p>
+            </div>
+            </div>
           </li>
           <li class="teammembers">
+            <div class="teammember-card">
             <img
               src="./images/teammembers/teamcard2.jpg"
               alt="Team Member 2"
               width="264"
             />
+            <div class="aboutteammember">
             <h3 class="ourteam-names">Tom Ford</h3>
             <p class="ourteam-section-paragraph">Frontend Developer</p>
+            </div>
+            </div>
           </li>
           <li class="teammembers">
+            <div class="teammember-card">
             <img
               src="./images/teammembers/teamcard3.jpg"
               alt="Team Member 3"
               width="264"
             />
+            <div class="aboutteammember">
             <h3 class="ourteam-names">Camila Garcia</h3>
             <p class="ourteam-section-paragraph">Marketing</p>
+            </div>
+            </div>
           </li>
           <li class="teammembers">
+            <div class="teammember-card">
             <img
               src="./images/teammembers/teamcard4.jpg"
               alt="Team Member 4"
               width="264"
             />
+            <div class="aboutteammember">
             <h3 class="ourteam-names">Daniel Wilson</h3>
             <p class="ourteam-section-paragraph">UI Designer</p>
+            </div>
+            </div>
           </li>
         </ul>
         </div>
@@ -136,60 +154,84 @@
       <section class="portfolio-section section">
         <div class="container">
         <h2 class="ourportfolio-title">Our portfolio</h2>
-        <ul>
-          <li>
+        <ul class="portfolio-list">
+          <li class="portfolio-items">
+            <div class="portfolio-card">
             <img
               src="./images/portfolioicons/icon-1.jpg"
               alt="Banking App"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Banking App</h3>
             <p class="ourportfolio-section-paragraph">App</p>
+            </div>
+          </div>
           </li>
-          <li>
+          <li class="portfolio-items">
+            <div class="portfolio-card">
             <img
               src="./images/portfolioicons/icon-2.jpg"
               alt="Cashless Payment"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Cashless Payment</h3>
             <p class="ourportfolio-section-paragraph">Marketing</p>
+            </div>
+          </div>
           </li>
-          <li>
+          <li class="portfolio-items">
+            <div class="portfolio-card">
             <img
               src="./images/portfolioicons/icon-3.jpg"
               alt="Meditation App"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Meditation App</h3>
             <p class="ourportfolio-section-paragraph">App</p>
+            </div>
+          </div>
           </li>
-          <li>
+          <li class="portfolio-items">
+            <div class="portfolio-card">
             <img
               src="./images/portfolioicons/icon-4.jpg"
               alt="Taxi Service"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Taxi Service</h3>
             <p class="ourportfolio-section-paragraph">Marketing</p>
+            </div>
+          </div>
           </li>
-          <li>
-            <img
+          <li class="portfolio-items">
+            <div class="portfolio-card">
+             <img
               src="./images/portfolioicons/icon-5.jpg"
               alt="Screen Illustrations"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Screen Illustrations</h3>
             <p class="ourportfolio-section-paragraph">Design</p>
+            </div>
+          </div>
           </li>
-          <li>
+          <li class="portfolio-items">
+            <div class="portfolio-card">
             <img
               src="./images/portfolioicons/icon-6.jpg"
               alt="Online Courses"
               width="360"
             />
+            <div class="aboutportfolio">
             <h3 class="portfolio-names">Online Courses</h3>
             <p class="ourportfolio-section-paragraph">Marketing</p>
+            </div>
+          </div>
           </li>
         </ul>
         </div>

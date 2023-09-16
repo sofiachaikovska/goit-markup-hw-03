@@ -27,6 +27,21 @@ body {
   padding: 120px 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -53,7 +68,31 @@ address {
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid var(--с-cards-light);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  gap: 76px;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -70,7 +109,10 @@ address {
 .accent {
   color: var(--c-background-dark);
 }
+
 .nav-link {
+  display: inline-block;
+  padding: 24 0;
   color: var(--c-background-dark);
   font-weight: 500;
 }
@@ -83,11 +125,19 @@ address {
   color: #404bbf;
 }
 
+ .header-addresses{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-address {
   font-style: normal;
 }
 
 .address {
+  display: inline-block;
+  padding: 24 0;
   color: var(--c-paragraphs);
 }
 
@@ -156,11 +206,24 @@ background-color: var(--c-primary);
   letter-spacing: 0.02em;
 }
 
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .advantages-section-paragraph {
   color: var(--c-paragraphs);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
 /* Our team section */
@@ -176,6 +239,12 @@ background-color: var(--c-primary);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
+}
+
+.teammembers-list {
+  display: flex;
+  gap: 24px;
 }
 
 .ourteam-names {
@@ -189,6 +258,23 @@ background-color: var(--c-primary);
 
 .teammembers {
   background-color: var(--c-primary);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.teammember-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.aboutteammember {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .ourteam-section-paragraph {
@@ -207,6 +293,33 @@ background-color: var(--c-primary);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
+
+.portfolio-items {
+  border: 1px solid var(--с-cards-light);
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.aboutportfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
 }
 
 .portfolio-names {
