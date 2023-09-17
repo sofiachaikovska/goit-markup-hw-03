@@ -18,9 +18,9 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1158px;
   margin: 0 auto;
-  padding: 0 156px;
+  padding: 0 15px;
 }
 
 .section {
@@ -81,7 +81,6 @@ address {
 .header-nav {
   display: flex;
   flex-grow: 1;
-  gap: 76px;
   align-items: center;
 }
 
@@ -100,6 +99,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo:focus {
@@ -183,6 +183,7 @@ address {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .hero-button:hover {
@@ -204,6 +205,7 @@ background-color: var(--c-primary);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -215,7 +217,6 @@ background-color: var(--c-primary);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
 }
 
 .advantages-section-paragraph {
@@ -254,19 +255,20 @@ background-color: var(--c-primary);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .teammembers {
   background-color: var(--c-primary);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
 }
 
 .teammember-card {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
 }
 
 .aboutteammember {
@@ -274,7 +276,7 @@ background-color: var(--c-primary);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  padding: 32px 0;
 }
 
 .ourteam-section-paragraph {
@@ -282,6 +284,7 @@ background-color: var(--c-primary);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Our portfolio section */
@@ -304,22 +307,20 @@ background-color: var(--c-primary);
 }
 
 .portfolio-items {
-  border: 1px solid var(--с-cards-light);
   width: calc((100% - 48px) / 3);
 }
 
 .portfolio-card {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
 }
 
 .aboutportfolio {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 0 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--с-cards-light);
+  border-top: none;
 }
 
 .portfolio-names {
@@ -328,6 +329,7 @@ background-color: var(--c-primary);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .ourportfolio-section-paragraph {
@@ -340,9 +342,11 @@ background-color: var(--c-primary);
 /* Footer */
 .footer-section {
   background-color: var(--c-background-dark);
+  padding: 100px 0;
 }
 
 .footer-logo {
+  display: inline-block;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -350,6 +354,7 @@ background-color: var(--c-primary);
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .footer-accent {
@@ -358,4 +363,5 @@ background-color: var(--c-primary);
 
 .footer-paragraph {
   color: var(--c-background-light);
+  max-width: 264px;
 }
