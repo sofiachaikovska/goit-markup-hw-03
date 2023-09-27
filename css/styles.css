@@ -112,7 +112,6 @@ address {
 
 .nav-link {
   display: inline-block;
-  padding: 24 0;
   color: var(--c-background-dark);
   font-weight: 500;
 }
@@ -137,7 +136,6 @@ address {
 
 .address {
   display: inline-block;
-  padding: 24 0;
   color: var(--c-paragraphs);
 }
 
