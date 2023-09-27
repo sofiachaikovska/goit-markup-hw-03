@@ -114,6 +114,7 @@ address {
   display: inline-block;
   color: var(--c-background-dark);
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .nav-link:hover {
