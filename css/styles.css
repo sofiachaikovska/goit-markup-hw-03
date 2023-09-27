@@ -265,11 +265,6 @@ background-color: var(--c-primary);
   width: calc((100% - 72px) / 4);
 }
 
-.teammember-card {
-  display: flex;
-  flex-direction: column;
-}
-
 .aboutteammember {
   display: flex;
   flex-direction: column;
